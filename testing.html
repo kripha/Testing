@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front">front</div>
+          <div class="card__face card__face--back">back</div>
+        </div>
+    </div>
+    <script>
+        var card = document.querySelectorAll('.card');
+        forEach(x => x.addEventListener( 'click', function() {
+        x.classList.toggle('is-flipped');
+        }))
+        card.addEventListener( 'click', function() {
+        card.classList.toggle('is-flipped');
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,523 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Lazy Dog', sans-serif;
+                            
+   
+                                                
+}
+
+
+body, body.firsts, body.nyc{
+    background-color: #f0cac4;
+    /*background-image: linear-gradient(#feecec, #f0cac4);*/
+    height:800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.opening{
+    /*border: 3px solid black;*/
+    margin:10px;
+    text-align: center;
+    color:#d3998f;
+
+}
+
+h4{
+    font-size: 56px;
+    font-family: 'Lazy Dog', sans-serif;
+                                                
+    
+                                                
+}
+
+h1{
+    font-size:80px;
+    font-family: 'Lazy Dog', sans-serif;
+                                                
+    color:#d3998f;
+
+}
+
+
+.indexarrow{
+    top: 50px;
+
+}
+.arrow{
+    position:relative;
+    border:none; 
+    border-radius: 10px;
+
+    width:50px; 
+    height:50px;
+
+    background:none;
+    color:#feecec;
+
+    font-family: 'Lazy Dog', sans-serif;
+                                                
+    font-size: 50px;
+    
+    transition-property: font-size;
+    transition-duration: .2s;
+}
+
+button:hover{
+    font-size: 60px;
+}
+
+body.firsts, body.nyc, body.longDistance, body.faraway{
+    justify-content: space-between;  
+    padding: 20px 0px 20px 0px;
+    
+}
+
+.firstsTitle{
+    text-align: center;
+    font-size: 96px;
+}
+
+
+
+div.firstscontainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.firstsbox{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 700px;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 1;
+
+}
+
+p{
+    font-size: 22px;
+    text-align: center;
+    color: #d3998f;
+}
+
+.photo1, .photo2, .photo3{
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.base{
+    height:50px;
+ 
+}
+
+.game{
+    width: 100%;
+    height:500px;
+    display:flex;
+    flex-direction: column;
+    align-items: space-around;
+    justify-content: space-around;
+}
+
+.toprow, .bottomrow{
+    display:flex;
+    height:250px;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+
+body.nyc{
+    justify-content: space-around;
+}
+
+
+.nycmessage{
+    margin: 10px;
+}
+
+
+
+
+.cardFour, .cardOne, .cardTwo, .cardThree{
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+}
+
+.front, .back{
+    width:200px;
+    height:200px;
+    position:absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    border:1px solid white;
+}
+
+.cardFour.flipCard, .cardOne.flipCard, .cardTwo.flipCard, .cardThree.flipCard{
+    transform:rotateY(-180deg);
+}
+
+.front{
+    /*background-color: red;*/
+}
+
+.back{
+    /*background-color: green;*/
+    transform: rotateY(-180deg);
+}
+
+
+
+.circle{
+    margin-top: 50px;
+    width: 1000px;
+    height: 650px;
+
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.longDistance{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8{
+    position: absolute;
+    width:200px;
+    height:200px;
+    background-color: red;
+
+    border-radius: 10px;
+}
+.item1:hover, .item2:hover, .item3:hover, .item4:hover, .item5:hover, .item6:hover, .item7:hover, .item8:hover{
+    transform:translateY(-20px);
+}
+.item1{
+    bottom:565px;
+}
+
+.item2{
+    top:515px;
+
+}
+
+.item3{
+    left:1100px;
+}
+
+.item4{
+    right:1100px;
+}
+
+.item5{
+    right: 875px;
+    bottom: 515px;
+    filter: brightness(105%)
+}
+
+.item6{
+    right: 875px;
+    top: 485px;
+}
+
+.item7{
+    left: 875px;
+    bottom: 515px;
+    filter: brightness(99%)
+}
+
+.item8{
+    left: 875px;
+    top: 485px;
+}
+
+.mes1, .mes2, .mes3, .mes4, .mes5, .mes6, .mes7, .mes8{
+    display:none;
+    position:absolute;
+
+}
+
+.item1:hover + .mes1, .item2:hover + .mes2, .item3:hover + .mes3, .item4:hover + .mes4, 
+.item5:hover + .mes5, .item6:hover + .mes6, .item7:hover + .mes7, .item8:hover + .mes8{
+    display: block;
+}
+
+
+.callnow{
+    color:white;
+}
+
+
+.phone{
+    width: 300px;
+    height: 450px;
+  
+    margin: 20px;
+}
+
+.screenshot{
+    position: absolute;
+    width:300px;
+    height: 450px;
+    border: 1px solid red;
+    display:none;
+    
+    /*transition-property: transform;*/
+    /*transition-timing-function: ease-in-out;*/
+    transition-duration: 1s;
+}
+
+.transformedstate{
+    display: block;
+    animation: fadeIn 1.5s;
+    transform: translateY(-35px);
+    /*transition-property: transform;*/
+   /* transition-duration: 1.1s;*/
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.transformedstate2{
+    transform: translateY(70px);
+
+}
+
+.reasons{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 0px;
+    margin-top: 0px;
+    /*transform: translateY(-30px);*/
+}
+
+.reason{
+    /*border: 1px solid green;*/
+    position:absolute;
+    width: 300px;
+    height: 100px;
+    text-align: left;
+    font-size: 18px;
+    transition-duration: 1s;
+    margin-top: 350px;
+
+
+}
+
+.number{
+    font-size: 20px;
+
+}
+
+button.callbutton:hover{
+    font-size: 20px;
+
+}
+
+.texts1, .texts2{
+    width: 200px;
+    height: 200px;
+}
+
+.containerfar{
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+}
+
+.containertext{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.calltext{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.firstssticker{
+    position:absolute;
+    width: 200px;
+    height: 200px;
+    top: 550px;
+    left: 990px;
+    border-radius: 10px;
+
+}
+
+.firstssticker2{
+    position:absolute;
+    width: 200px;
+    height: 200px;
+    top: 550px;
+    right: 1200px;  /*LEFT AMD RIGHT*/
+    border-radius: 10px;
+    border: 1px solid white;
+
+}
+
+.intropic{
+    width:200px;
+    height:200px;
+}
+
+body, .photo1, .photo3, .photo2, .firstssticker {
+    animation: transitionIn 1.2s;
+
+}
+
+@keyframes transitionIn {
+    from{
+        opacity:0;
+     
+    }
+
+    to{
+        opacity:1;
+     
+    }
+    
+}
+
+body.intro{
+    background-color:#DDD5CC;
+}
+
+.opening{
+    color:#D2586D;
+}
+
+.indexarrow{
+    color:#e6e6e6;
+}
+
+
+h5{
+    font-size: 26px;
+}
+
+img{
+    border-radius: 10px;
+}
+
+body.firsts{
+    background-color: #edde9d;
+}
+
+.firstsTitle, .firstsmessage{
+
+
+    color:#db506b;
+
+}
+
+.firstsarrow{
+
+    color:white;
+}
+
+body.nyc{
+    background-color: #e7d4da;
+}
+
+.nycarrow{
+    color: white;
+}
+
+.nycmessage, .nyctitle{
+    color: #c62b5b;
+}
+
+.longTitle{
+    text-align: center;
+    width: 500px;
+}
+
+.mes1, .mes2, .mes3, .mes4, .mes5, .mes6, .mes7, .mes8{
+    width:500px;
+}
+
+body.longDistance{
+    background-color: #bfd7ca;
+}
+
+.item7, .item8, .item5, .item6{
+    border: 1px solid white;
+}
+
+
+body.faraway{
+    background-color: #f8eee1;
+}
+
+.callbutton{
+    color:#76a7b4;
+    background-color: #f8eee1;
+    border: 2px solid #76a7b4;
+    font-size: 23px;
+}
+
+h1.longDistanceTitle{
+    color: #76a7b4;
+    text-align: center;
+}
+
+
+.longarrows, .reason{
+    color:#76a7b4;
+}
+
+.reason{
+    font-size: 22px;
+}
+
+.delay4{
+    width: 350px;
+   
+}
+
+body.conclusion{
+    background-color: #eccdcd;
+}
+
+.closing{
+    text-align: center;
+}
+
+.closing{
+    color: #eb869b;
+}
+
+.closingarrow{
+    color: white;
+}
+
+.longTitle{
+    color: #DBA6A7;
+}
+
+
